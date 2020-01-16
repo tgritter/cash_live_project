@@ -1,0 +1,462 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  width: 460px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form text {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #444;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Login */
+
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* basic reset */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* app */
+html {
+  font-size: 100%;
+}
+body {
+  background: #003366;
+  font-family: 'Open Sans',sans-serif;
+}
+/* super basic grid structure */
+.container {
+  width: 800px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 20px 5px;;
+  -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2);
+          box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+.row {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+}
+.half {
+  width: 50%;
+  float: left;
+}
+.content {
+  background: #fff;
+}
+/* logo */
+h1 {
+  font-family: 'Rokkitt', sans-serif;
+  color: #666;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+p {
+  font-family: 'Rokkitt', sans-serif;
+  color: red;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+.tagline {
+  margin-top: -10px;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #777; 
+}
+/* inputs */
+.inputContainer {
+  display: flex;
+  align-items: flex-start;
+  height: 60px;
+  border-top: 1px solid #e5e5e5;
+  position: relative;
+}
+.inputContainer.last {
+  border-bottom: 1px solid #e5e5e5;
+}
+.inputContainer.half.last.right {
+  border-left: 1px solid #efefef;
+}
+input[type="date"], input[type="text"], select {
+  height: 100%;
+  padding: 0 20px;
+  top: 0;
+  vertical-align: middle;
+  display: inline-block;
+  border: none;
+  border-radius: none;
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+}
+input[type="date"] {
+  cursor: pointer;
+}
+input[type="date"]:focus, input[type="text"]:focus, select:focus {
+  outline: none;
+  background: #ecf0f1;
+}
+::-webkit-input-placeholder {
+  color: #777;
+  font-weight: normal;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+::-moz-placeholder {
+  color: lightgrey;
+  font-weight: normal;
+  transition: all 0.3s;
+}
+::-ms-input-placeholder {
+  color: lightgrey;
+  font-weight: normal;
+  transition: all 0.3s;
+}
+input:-moz-placeholder {
+  color: lightgrey;
+  font-weight: normal;
+  transition: all 0.3s;
+}
+input:focus::-webkit-input-placeholder {
+  color: #95a5a6;
+  font-weight: bold;
+}
+input:focus::-moz-input-placeholder {
+  color: #95a5a6;
+  font-weight: bold;
+}
+.inputContainer label {
+  padding: 5px 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #777;
+  display: block;
+  position: absolute;
+}
+button {
+  font-family: 'Open Sans', sans-serif;
+  background: transparent;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding-left: 30px;
+  padding-right: 15px;
+}
+.icon {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  font-size: 20px;
+}
+.taskAdd {
+  background: #444;
+  padding-left: 15px;
+}
+.taskAdd:hover {
+  background: #303030;
+}
+.taskDelete {
+  background: #e74c3c;
+  padding-left: 30px;
+}
+.taskDelete:hover {
+  background: #c0392b;
+}
+/* task styles */
+.taskList {
+  list-style: none;
+  padding: 0 20px;
+}
+.taskContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #777;
+  padding-left: 3px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.taskItem {
+  display: flex;
+  flex: 4;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid #e5e5e5;
+  color: #777;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.taskList .taskItem:nth-child(even) {
+  background: #fcfcfc;
+}
+.taskCheckbox {
+  margin-right: 1em;
+}
+.complete-true {
+  text-decoration:  line-through;
+  color: #bebebe;
+}
+.taskList .taskDate {
+  height: 12px;
+  color: #95a5a6;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  margin-left: -3px;
+}
+.select{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+  margin-left: -4px;
+}
+.dateContainer{
+  padding-bottom: 20px;
+}
+.icon-p{
+  padding-right: 5px;
+}
+.fa-calendar {
+  margin-right: 10px;
+  font-size: 16px;
+}
+[class*='category-'] {
+  display: inline-block;
+  font-size: 10px;
+  background: #444;
+  vertical-align: middle;
+  color: #fff;
+  padding: 10px;
+  width: 75px;
+  text-align: center;
+  border-radius: 2px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+footer {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #777;
+}
+footer a {
+  color: #f39c12;
+}
+/* custom select menu */
+.taskCategory {
+  -webkit-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  background: #fff;
+}
+.selectArrow {
+  position: absolute;
+  z-index: 10;
+  top: 35%;
+  right: 0;
+  margin-right: 20px;
+  color: #777;
+  pointer-events: none;
+}
+.taskCategory option {
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 0 100px;
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  color: #777;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.logout {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-family: 'Open Sans', sans-serif;
+  outline: 0;
+  color: #f2f2f2;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
