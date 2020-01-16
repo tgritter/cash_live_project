@@ -8,19 +8,19 @@ MySQL
 ## Install Project Requirements
 Make sure you have python3 and npm installed \
 [Npm installation guide](https://docs.npmjs.com/cli/install) \
-[Python3 installation guide](https://realpython.com/installing-python/) \
+[Python3 installation guide](https://realpython.com/installing-python/) 
 
 ## To Run Backend
 cd into the `backend` directory \
-run `python3 manage.py runserver` in your terminal \
+run `python3 manage.py runserver` in your terminal 
 
 ## To Run Frontend
 cd into the `frontend` directory \
 run `npm start` in your terminal \
-The server should be running at `http://localhost:3000 \`
+The server should be running at `http://localhost:3000 
 
 ## Login to the App
-Use these credentials to login in: \
+Use these credentials to login in: 
 
 Username: user01 \
 Password: superdupersecure01
