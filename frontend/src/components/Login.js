@@ -36,12 +36,18 @@ export default class Login extends React.Component {
     this.setState({[e.target.name]: e.target.value})
   }
 
+  handleSkip = () => {
+    this.props.history.push('/todo')
+  }
+
   render(){
     const {username, password, errorMessage} = this.state;
     return (
       <div className="login-page">
+          <button className="logout" onClick={this.handleSkip}>Skip</button>
           <div className="form">
               <div className="login-form">
+                  <h1>TodoApp</h1>
                   <input type="text" name="username" placeholder="username" value={username} onChange={this.handleChange}/>
                   <input type="password" name="password" placeholder="password" value={password} onChange={this.handleChange}/>
                   <p>{errorMessage}</p>
